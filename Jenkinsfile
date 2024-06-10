@@ -7,5 +7,10 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            mail bcc: '', body: 'Nam123456', cc: '', from: '', replyTo: '', subject: 'Hi Nam', to: 'nambh911@gmail.com'
+        }
+    }
 }
 
